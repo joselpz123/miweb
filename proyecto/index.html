@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Paz, BCS - Destino Turístico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Nota: Reemplazar YOUR_API_KEY con una clave de API de Google Maps válida -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script> 
+</head>
+<body>
+    <!-- Encabezado con navegación -->
+    <header>
+        <div class="logo">
+            <h1 style="margin: 0; color: white;">&quot;Delicious Bakery&quot;</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+                <li><a href="#atracciones">Sucursales</a></li>
+             
+                <li><a href="#gastronomia">Nuestros Panes</a></li>
+                <li><a href="#hospedaje">Hospedaje</a></li>
+                <li><a href="#mapa">Mapa Interactivo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section id="inicio" class="banner" style="background-image: url('https://images.unsplash.com/photo-1582673937754-8d0cfed5412c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        <h1>Descubre El Sabor </h1>
+        <p>El paraíso escondido de Baja California Sur</p>
+    </section>
+
+    <!-- Acerca de La Paz -->
+    <section id="acerca-de" class="about">
+        <h2>Acerca de La Paz</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>El negocio en cuestión es &quot;Delicious Bakery&quot;, una panadería artesanal ubicada en el
+                    corazón de la ciudad. &quot;Delicious Bakery&quot; se dedica a la producción y venta de panadería y
+                    repostería artesanal de alta calidad, con una oferta que incluye panes frescos, pasteles
+                    personalizados, galletas gourmet, y productos sin gluten. Utilizan ingredientes frescos,
+                    locales y de alta calidad, lo que les permite diferenciarse de otras panaderías en el área. La
+                    empresa también ha comenzado a ofrecer servicios de catering para eventos especiales,
+                    como bodas, cumpleaños y otros eventos corporativos. Además, mantienen un enfoque muy
+                    fuerte en la sostenibilidad, utilizando empaques reciclables y respetuosos con el medio
+                    ambiente.
+            </div>
+            <div class="about-image">
+                <img src="des_obrera.jpg" alt="Vista aérea de La Paz">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sucursales -->
+    <section id="atracciones" class="attractions">
+        <h2>Surcusales</h2>
+        <div class="attractions-grid">
+            <div class="attraction-card">
+                <img src="des_obrera.jpg" alt="sucursal pinopayas">
+                <h3>Pan La Paz</h3>
+                <p>Una de nuestras sucursales mas conocidas y la mas cotizada es la Pan la Paz.</p>
+            </div>
+            <div class="attraction-card">
+                <img src="image.webp" alt="Sucursal El Esterito">
+                <h3>La Francesa</h3>
+                <p>La sucursal la "Francesa" es otra de nuestrras sucursales donde tenemos pan mas creados e inspirados en panes Franceses.</p>
+            </div>
+            <div class="attraction-card">
+                <img src="Linda-Vista.jpg" alt="Sucursal Diana Laura">
+                <h3>Pasteleria Caty</h3>
+                <p>La pasteleria "caty" es nuestra principal sucursal dedicada a pasteles de alta calidad e ingredienrtes pedidos al gusto, eso hace la diferencia de otras pastelerias.</p>
+            </div>
+            <div class="attraction-card">
+                <img src="img_0777-AwvEoe7kenFN8VPy.avif">
+                <h3>Panaderia La Artesanal</h3>
+                <p>Nuestra ultima Panaderia y la mas reciente, echa dedicada a fabricar panes "Artesanal" esta sucursal es la indicada para ti si eres de los gustos Artesanales </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actividades 
+    <section id="actividades" class="activities">
+        <h2>Actividades</h2>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <img src="https://images.unsplash.com/photo-1564571727476-1716d4a5934b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nado con tiburón ballena">
+                <h3>Nado con Tiburón Ballena</h3>
+                <p>De octubre a febrero, experimenta la emoción de nadar junto al pez más grande del mundo en su hábitat natural.</p>
+            </div>
+            <div class="activity-card">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Snorkel y buceo">
+                <h3>Snorkel y Buceo</h3>
+                <p>Explora los arrecifes coloridos y la abundante vida marina del Mar de Cortés, hogar de más de 900 especies de peces.</p>
+            </div>
+            <div class="activity-card">
+                <img src="https://images.unsplash.com/photo-1526761122248-c31c93f8b2b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kayak">
+                <h3>Kayak en Bahías Tranquilas</h3>
+                <p>Rema a través de las aguas tranquilas de Balandra o Espíritu Santo, explorando cuevas y playas escondidas.</p>
+            </div>
+            <div class="activity-card">
+                <img src="https://images.unsplash.com/photo-1516407658012-9a3cc7fc479c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Avistamiento de ballenas">
+                <h3>Avistamiento de Ballenas</h3>
+                <p>De enero a marzo, observa ballenas grises y jorobadas durante su migración anual a las cálidas aguas del Mar de Cortés.</p>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Gastronomía -->
+    <section id="gastronomia" class="food">
+        <h2>Panes de la casa</h2>
+        <div class="food-grid">
+            <div class="food-card">
+                <img src="pan 1.webp" alt="Almeja Chocolata">
+                <h3> Bagel: un pan esponjoso y con agujero </h3>
+                <p>El bagel es un pan que más bien parece una rosquilla por su agujero en el centro. Su miga es esponjosa y su exterior ligeramente crujiente. El truco es que, antes de ser horneao, se cocina durante un breve espacio de tiempo en agua.</p>
+            </div>
+            <div class="food-card">
+                <img src="imagen 2.webp">
+                <h3>Pan de ajo: el acompañamiento más delicioso</h3>
+                <p>Bastan tres ingredientes básicos para crear un delicioso pan de ajo: pan tostado, aceite de oliva y ajo troceado. Se sirve como acompañamiento a muchos platos italianos. </p>
+            </div>
+            <div class="food-card">
+                <img src="Panes-mexicanos-conchas.jpg" alt="Mariscos Frescos">
+                <h3>Concha</h3>
+                <p> Unos de los panes mexicanos más populares es la concha, que le dieron este nombre porque se parece a las conchas de mar. Hay de vainilla y chocolate, algunas personas la rellenan de nata. De hecho, en Japón también existe un pan igualito a las conchas, pero allá se llama Melonpan y el cuál introdujeron los portugueses. </p>
+            </div>
+            <div class="food-card">
+                <img src="Pan-de-pulque.jpg" alt="Machaca">
+                <h3>Pan de pulque</h3>
+                <p>Seguro has visto y probado este pan, es el protagonista en las ferias o mercados de pueblo. Hecho con el trigo español y el pulque mexicano, es grande y lleva ajojolí arriba, de hecho, las personas que lo hacen, tienen sus hornos ahí mismo para sacar más y más piezas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospedaje -->
+    <section id="hospedaje" class="accommodation">
+        <h2>Hospedaje</h2>
+        <div class="accommodation-grid">
+            <div class="accommodation-card">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hoteles de Lujo">
+                <h3>Hoteles de Lujo</h3>
+                <p>Resorts frente al mar con todas las comodidades, spas, piscinas infinitas y vistas espectaculares.</p>
+            </div>
+            <div class="accommodation-card">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hoteles Boutique">
+                <h3>Hoteles Boutique</h3>
+                <p>Alojamientos con encanto y atención personalizada, perfectos para una experiencia auténtica.</p>
+            </div>
+            <div class="accommodation-card">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Apartamentos y Casas">
+                <h3>Apartamentos y Casas</h3>
+                <p>Opciones para familias o grupos que buscan más espacio y la posibilidad de cocinar.</p>
+            </div>
+            <div class="accommodation-card">
+                <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hostales">
+                <h3>Hostales</h3>
+                <p>Alternativas económicas para viajeros con presupuesto limitado, ideales para conocer a otros viajeros.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Interactivo -->
+    <section id="mapa" class="map-section">
+        <h2>Mapa Interactivo</h2>
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="map-filters">
+                <!-- Los filtros se generarán dinámicamente con JavaScript -->
+            </div>
+            <p class="map-note" style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: #6c757d;">
+                Nota: Para utilizar el mapa interactivo completo, se requiere una clave de API de Google Maps válida.
+            </p>
+        </div>
+    </section>
+
+    <!-- Información práctica -->
+    <section id="info-practica" class="practical-info">
+        <h2>Información Práctica</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Clima</h3>
+                <p>La Paz tiene un clima desértico cálido con temperaturas promedio de 24-35°C en verano y 15-25°C en invierno. La mejor época para visitar es de noviembre a mayo.</p>
+            </div>
+            <div class="info-card">
+                <h3>Cómo Llegar</h3>
+                <p>El Aeropuerto Internacional de La Paz (LAP) recibe vuelos nacionales. También puedes llegar en ferry desde Topolobampo o Mazatlán, o por carretera desde Los Cabos (2 horas).</p>
+            </div>
+            <div class="info-card">
+                <h3>Transporte Local</h3>
+                <p>Taxis, autobuses locales y servicios de renta de autos están disponibles. El centro de la ciudad es fácil de recorrer a pie.</p>
+            </div>
+            <div class="info-card">
+                <h3>Consejos de Seguridad</h3>
+                <p>La Paz es considerada una de las ciudades más seguras de México. Como en cualquier destino, mantén precauciones básicas con tus pertenencias.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: DeliciousBakery@gmail.com</p>
+                <p>Teléfono: +52 612 123 4567</p>
+                <p>Dirección: centro Malecón de La Paz, BCS, México 23083</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Gobierno de BCS</a></li>
+                    <li><a href="#">Secretaría </a></li>
+                    <li><a href="#">Emergencias</a></li>
+                    <li><a href="#">Lugar del Sitio</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Pan La Paz  - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/map.js"></script>
+</body>
+</html>
